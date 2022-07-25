@@ -53,7 +53,7 @@ function App() {
     };
     await getCurrentPosition();
 
-    await axios.get(`http://geoapi.heartrails.com/api/json?method=searchByGeoLocation&x=${Math.round(data.pos.longitude*10)/10}&y=${Math.round(data.pos.latitude*10)/10}`)
+    await axios.get(`https://geoapi.heartrails.com/api/json?method=searchByGeoLocation&x=${Math.round(data.pos.longitude*10)/10}&y=${Math.round(data.pos.latitude*10)/10}`)
     .then(res => {
       data.city = res.data.response.location[0].prefecture});
 
