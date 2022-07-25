@@ -37,10 +37,10 @@ function App() {
     }
     const getData = async() => {
       let data = {
-        city: "東京都",
+        city: "京都府",
         pos: {
-          latitude: 0,
-          longitude: 0
+          latitude: 35.0,
+          longitude: 135.0
         },
       }
     const getCurrentPosition = async() => {
